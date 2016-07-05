@@ -1,0 +1,205 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+
+*{
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+body{
+	color:#fff;
+	font-size:13px;
+	font-family:Calibri, Helvetica, Arial;
+	text-align:center;
+
+	direction:ltr;
+	padding:0;
+	margin:0;
+}
+
+#bg{
+	position:absolute;
+	z-index:2;
+	left:0;
+	top:-2px;
+	width:100%;
+	background:#fff no-repeat center top;
+}
+
+.line{
+	position:fixed;
+	z-index:3;
+	left:50%;
+	margin-left:-642px;
+	top:-2px;
+	width:1280px;
+	height:650px;
+	border:2px dotted blue;
+}
+
+.line:before{
+	color:#fff;
+	font:12px Arial;
+	font-weight:bold;
+	position:absolute;
+	left:-2px;
+	bottom:-2px;
+	height:16px;
+	z-index:4;
+	padding:2px;
+	background:blue;
+}
+
+.hideGuides .line{
+	display:none;
+}
+
+/************************/
+.line1024{
+	display:none;
+	margin-left:-495px;
+	width:990px;
+	height:650px;
+	border:2px dotted yellow;
+}
+
+.line1024:before{
+	color:#000;
+	content:"Tablet - 1024x768 (990x650)";
+	left:auto;
+	right:-2px;
+	background:yellow;
+}
+
+/************************/
+.line1280{
+	margin-left:-625px;
+	width:1250px;
+	height:680px;
+	border:2px dotted blue;
+}
+
+.line1280:before{
+	content:"19' screen - 1280x800 (1250x680)";
+	bottom:-20px;
+	background:blue;
+}
+
+/************************/
+.line1366{
+	margin-left:-665px;
+	width:1330px;
+	height:650px;
+	border:2px dotted green;
+}
+
+.line1366:before{
+	content:"Laptop - 1366x768 (1330x650)";
+	bottom:-20px;
+	background:green;
+}
+
+/************************/
+.line1440{
+	margin-left:-705px;
+	width:1410px;
+	height:780px;
+	border:2px dotted purple;
+}
+
+.line1440:before{
+	content:"Laptop - 1440x900 (1410x780)";
+	bottom:-20px;
+	background:purple;
+}
+
+/************************/
+.line1920{
+	margin-left:-945px;
+	width:1890px;
+	height:960px;
+	border:2px dotted red;
+}
+
+.line1920:before{
+	content:"24' screen - 1920x1080 (1890x960)";
+	background:red;
+}
+
+/************************/
+.infoBar{
+	position:fixed;
+	left:50%;
+	bottom:0;
+	z-index:100;
+	width:600px;
+	height:31px;
+	margin-left:-300px;
+}
+
+.infoBar #userData{
+	position:absolute;
+	left:0;
+	bottom:0;
+	z-index:101;
+	width:600px;
+	height:31px;
+	text-align:center;
+	padding:9px 46px 8px 15px;
+	border-radius:10px 15px 0 0;
+	background:rgba(0, 0, 0, 0.8);
+	transition:all .15s ease-in-out;
+}
+
+.infoBar #userData.hidden{
+	bottom:-50px;
+}
+
+.infoBar .infoBtn{
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+	cursor:pointer;
+
+	position:absolute;
+	right:0;
+	bottom:0;
+	z-index:102;
+	width:35px;
+	height:31px;
+	padding:5px 0 0 2px;
+	border-radius:10px 10px 0 0;
+	background:rgba(0, 0, 0, 0.8);
+
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+
+.infoBar .infoBtn:hover{
+	background:#39bfd3;
+}
+
+.infoBar #openBtn{
+	display:none;
+}
+
+.infoBar .link{
+	cursor:pointer;
+}
+
+.infoBar .link:hover{
+	text-decoration:underline;
+}
